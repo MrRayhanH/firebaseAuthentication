@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Create an account"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="15dp" />
+
+
+
+    <EditText
+        android:id="@+id/et_signup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+
+        android:autofillHints="username" />
+
+    <EditText
+        android:id="@+id/et_SU_emailPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email or Phone"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/et_SU_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="password" />
+
+    <EditText
+        android:id="@+id/et_SU_confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints="password" />
+
+    <Button
+        android:id="@+id/btn_SU_Signup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sign up"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF3131" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or connect with"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_SU_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FF3B30"
+            android:layout_marginStart="4dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
